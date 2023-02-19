@@ -1,0 +1,7 @@
+[
+    "app/Modules/Images/Migrations",
+    "app/Modules/Translations/Migrations",
+    "app/Modules/Users/Migrations",
+    "app/Modules/Categories/Migrations",
+    "app/Modules/Categorizable/Migrations"
+]

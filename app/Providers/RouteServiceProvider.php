@@ -18,7 +18,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/home';
+    public const HOME = '/dashboard';
 
     /**
      * The controller namespace for the application.
@@ -70,7 +70,7 @@ class RouteServiceProvider extends ServiceProvider
                     $routeFiles = json_decode(file_get_contents(__DIR__ . '/routes.json'), true);
 
                     foreach ($routeFiles as $routeFile)
-                        Route::middleware('api')
+                        Route::middleware('web')
                             ->namespace($this->namespace)
                             ->group(base_path($routeFile));
                 }
